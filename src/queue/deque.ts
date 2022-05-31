@@ -1,7 +1,7 @@
 import Queue from "./queue";
 
 export default class Deque<T> extends Queue<T> {
-  constructor(array: Array<T>) {
+  constructor(array?: Array<T>) {
     super(array);
   }
 
