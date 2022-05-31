@@ -1,6 +1,6 @@
 {
   "name": "@kartikkhk/stl-node",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Standard Data Structures for Node JS",
   "main": "build/index.js",
   "scripts": {
