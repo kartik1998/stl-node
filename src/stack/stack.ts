@@ -17,7 +17,7 @@ export default class Stack<T> {
   // Returns the element on the top of the stack, but does not remove it.
   public peek(): T | undefined {
     if (this.isEmpty()) return undefined;
-    return this._arr[this._arr.unshift()];
+    return this._arr[this._arr.length - 1];
   }
 
   // checks if stack is empty

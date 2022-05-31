@@ -1,7 +1,7 @@
 import IQueue from "./interface";
 
 export default class Queue<T> implements IQueue<T> {
-  private _arr: Array<T> = [];
+  protected _arr: Array<T> = [];
 
   constructor(arr?: Array<T>) {
     if (Array.isArray(arr)) this._arr = Array.from(arr);
@@ -26,5 +26,9 @@ export default class Queue<T> implements IQueue<T> {
 
   array(): T[] {
     return this._arr;
+  }
+
+  static fromArray<T>(array: Array<T>): Queue<T> {
+    return new Queue<T>(array);
   }
 }
