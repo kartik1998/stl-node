@@ -29,4 +29,8 @@ export default class Deque<T> extends Queue<T> {
     if (this.isEmpty()) return undefined;
     return this._arr[this._arr.length - 1];
   }
+
+  static fromArray<T>(array: Array<T>): Deque<T> {
+    return new Deque<T>(array);
+  }
 }
