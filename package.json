@@ -1,0 +1,30 @@
+{
+  "name": "stl-node",
+  "version": "1.0.0",
+  "description": "Standard Data Structures for Node JS",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "node build/index.js",
+    "prepublishOnly": "npm run compile",
+    "compile": "tsc -p tsconfig.json",
+    "build": "npm run compile && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kartik1998/stl-node.git"
+  },
+  "keywords": [
+    "STL",
+    "Data",
+    "Structures"
+  ],
+  "author": "Kartik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kartik1998/stl-node/issues"
+  },
+  "homepage": "https://github.com/kartik1998/stl-node#readme",
+  "dependencies": {
+    "typescript": "^4.7.2"
+  }
+}
