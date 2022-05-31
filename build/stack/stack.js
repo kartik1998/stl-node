@@ -20,5 +20,17 @@ class Stack {
     isEmpty() {
         return this._arr.length === 0;
     }
+    size() {
+        return this._arr.length;
+    }
+    array() {
+        return this._arr;
+    }
+    clear() {
+        this._arr = [];
+    }
+    static fromArray(array) {
+        return new Stack(array);
+    }
 }
 exports.default = Stack;

@@ -21,4 +21,20 @@ export default class Stack<T> {
   public isEmpty(): boolean {
     return this._arr.length === 0;
   }
+
+  public size(): number {
+    return this._arr.length;
+  }
+
+  public array(): Array<T> {
+    return this._arr;
+  }
+
+  public clear(): void {
+    this._arr = [];
+  }
+
+  public static fromArray<T>(array: Array<T>) {
+    return new Stack<T>(array);
+  }
 }
